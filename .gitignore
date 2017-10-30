@@ -1,0 +1,5 @@
+gitlab/.env
+*.tfvars
+terraform.tfstate.backup
+.terraform
+ci-hw-1/reddit
