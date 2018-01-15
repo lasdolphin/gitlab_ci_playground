@@ -20,10 +20,11 @@ resource "google_compute_instance" "gitlab_host" {
 
   # определение загрузочного диска
   boot_disk {
-    initialize_params {
-      image = "${var.app_disk_image}"
-      size = "50"
-    }
+    // initialize_params {
+    //   image = "${var.app_disk_image}"
+    //   size = "50"
+    // }
+    source  = "${var.name}"
     auto_delete = "false"
   }
 

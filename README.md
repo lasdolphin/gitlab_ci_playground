@@ -10,7 +10,7 @@
 ```docker-machine create \
     --driver generic \
     --generic-ip-address=${ip} \
-    --generic-ssh-user=${user} \
+    --generic-ssh-user=gitlab \
     --generic-ssh-key ~/.ssh/id_rsa \
     gitlab-host
 ```
